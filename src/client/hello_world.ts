@@ -93,9 +93,9 @@ export async function establishConnection(): Promise<void> {
 
   //Insert the Step 1 code from the tutorial here
   // Step 1: Connect to the Solana Devnet
-connection = new Connection(clusterApiUrl("devnet"),"confirmed");
-const version = await connection.getVersion();
-console.log('Connection to cluster established:', version);
+    connection = new Connection(clusterApiUrl("devnet"),"confirmed");
+    const version = await connection.getVersion();
+    console.log('Connection to cluster established:', version);
 
 
 }
